@@ -1,4 +1,7 @@
-﻿namespace TheGreatestApiInTheWorldTribute.Extensions
+﻿using TheGreatestApiInTheWorldTribute.Contracts;
+using TheGreatestApiInTheWorldTribute.LoggerService;
+
+namespace TheGreatestApiInTheWorldTribute.Extensions
 {
     public static class ServiceExtensions
     {
@@ -18,6 +21,11 @@
         public static void ConfigureIIS(this IServiceCollection services)
         {
             services.Configure<IISOptions>(options => { });
+        }
+
+        public static void ConfigureLogging(this IServiceCollection services)
+        {
+            services.AddSingleton<ILoggerManager, LoggerManager>();
         }
     }
 }

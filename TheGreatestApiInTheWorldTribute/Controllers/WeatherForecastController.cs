@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using TheGreatestApiInTheWorldTribute.Contracts;
 
 namespace TheGreatestApiInTheWorldTribute.Controllers
 {
@@ -11,9 +12,9 @@ namespace TheGreatestApiInTheWorldTribute.Controllers
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILoggerManager _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILoggerManager logger)
         {
             _logger = logger;
         }
