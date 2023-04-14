@@ -1,5 +1,6 @@
 using TheGreatestApiInTheWorldTribute.Extensions;
 using Microsoft.AspNetCore.HttpOverrides;
+using NLog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,12 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.ConfigureCors();
 builder.Services.ConfigureIIS();
+builder.Services.ConfigureLogging();
 
 builder.Services.AddControllers();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
+LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
 if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
