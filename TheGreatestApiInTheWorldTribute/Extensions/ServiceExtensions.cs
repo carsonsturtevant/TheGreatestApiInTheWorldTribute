@@ -1,5 +1,6 @@
 ﻿using TheGreatestApiInTheWorldTribute.Contracts;
 using TheGreatestApiInTheWorldTribute.LoggerService;
+using TheGreatestApiInTheWorldTribute.Repository;
 
 namespace TheGreatestApiInTheWorldTribute.Extensions
 {
@@ -26,6 +27,11 @@ namespace TheGreatestApiInTheWorldTribute.Extensions
         public static void ConfigureLogging(this IServiceCollection services)
         {
             services.AddSingleton<ILoggerManager, LoggerManager>();
+        }
+
+        public static void ConfigureRepositoryManager(this IServiceCollection services)
+        {
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
         }
     }
 }
