@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreatestApiInTheWorldTri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreatestApiInTheWorldTribute.Repository", "TheGreatestApiInTheWorldTribute.Repository\TheGreatestApiInTheWorldTribute.Repository.csproj", "{9AB55B46-F8EB-42EE-89D3-4902B35B059D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreatestApiInTheWorldTribute.Service.Contracts", "TheGreatestApiInTheWorldTribute.Service.Contracts\TheGreatestApiInTheWorldTribute.Service.Contracts.csproj", "{9550C1EB-F6BB-42BA-940B-F99F7820BA0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreatestApiInTheWorldTribute.Service", "TheGreatestApiInTheWorldTribute.Service\TheGreatestApiInTheWorldTribute.Service.csproj", "{7426510E-ACA2-440B-9F0B-6C3198AC936C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +48,14 @@ Global
 		{9AB55B46-F8EB-42EE-89D3-4902B35B059D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AB55B46-F8EB-42EE-89D3-4902B35B059D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AB55B46-F8EB-42EE-89D3-4902B35B059D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9550C1EB-F6BB-42BA-940B-F99F7820BA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9550C1EB-F6BB-42BA-940B-F99F7820BA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9550C1EB-F6BB-42BA-940B-F99F7820BA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9550C1EB-F6BB-42BA-940B-F99F7820BA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7426510E-ACA2-440B-9F0B-6C3198AC936C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7426510E-ACA2-440B-9F0B-6C3198AC936C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7426510E-ACA2-440B-9F0B-6C3198AC936C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7426510E-ACA2-440B-9F0B-6C3198AC936C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

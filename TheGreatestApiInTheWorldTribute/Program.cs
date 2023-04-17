@@ -12,6 +12,8 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureIIS();
 builder.Services.ConfigureLogging();
 builder.Services.ConfigureRepositoryManager();
+builder.Services.ConfigureServiceManager();
+builder.Services.ConfigureSqlContext(builder.Configuration);
 
 builder.Services.AddControllers();
 

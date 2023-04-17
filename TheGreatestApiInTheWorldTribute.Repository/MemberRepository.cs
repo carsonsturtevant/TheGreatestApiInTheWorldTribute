@@ -3,7 +3,7 @@ using TheGreatestApiInTheWorldTribute.Entities.Models;
 
 namespace TheGreatestApiInTheWorldTribute.Repository
 {
-    public class MemberRepository : RepositoryBase<Member>, IMemberRepository
+    internal sealed class MemberRepository : RepositoryBase<Member>, IMemberRepository
     {
         public MemberRepository(RepositoryContext context) : base(context)
         {
