@@ -22,6 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TheGreatestApiInTheWorldTribute.Contracts\TheGreatestApiInTheWorldTribute.Contracts.csproj" />
+    <ProjectReference Include="..\TheGreatestApiInTheWorldTribute.Entities\TheGreatestApiInTheWorldTribute.Entities.csproj" />
     <ProjectReference Include="..\TheGreatestApiInTheWorldTribute.LoggerService\TheGreatestApiInTheWorldTribute.LoggerService.csproj" />
     <ProjectReference Include="..\TheGreatestApiInTheWorldTribute.Presentation\TheGreatestApiInTheWorldTribute.Presentation.csproj" />
     <ProjectReference Include="..\TheGreatestApiInTheWorldTribute.Repository\TheGreatestApiInTheWorldTribute.Repository.csproj" />

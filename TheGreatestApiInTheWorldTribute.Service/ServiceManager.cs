@@ -1,4 +1,5 @@
-﻿using TheGreatestApiInTheWorldTribute.Service.Contracts;
+﻿using TheGreatestApiInTheWorldTribute.Contracts;
+using TheGreatestApiInTheWorldTribute.Service.Contracts;
 
 namespace TheGreatestApiInTheWorldTribute.Service
 {
@@ -7,10 +8,12 @@ namespace TheGreatestApiInTheWorldTribute.Service
         private readonly Lazy<IBandService> _bandService;
         private readonly Lazy<IMemberService> _memberService;
 
-        public ServiceManager(Lazy<IBandService> bandService, Lazy<IMemberService> memberService)
+        public ServiceManager(IRepositoryManager repositoryManager, ILoggerManager logger)
         {
-            _bandService = bandService;
-            _memberService = memberService;
+            _bandService = new Lazy<IBandService>(() =>
+            new BandService(repositoryManager, logger));
+            _memberService = new Lazy<IMemberService>(() =>
+                new MemberService(repositoryManager, logger));
         }
 
         public IBandService BandService => _bandService.Value;
