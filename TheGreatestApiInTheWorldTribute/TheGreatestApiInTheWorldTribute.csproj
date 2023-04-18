@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TheGreatestApiInTheWorldTribute.LoggerService\TheGreatestApiInTheWorldTribute.LoggerService.csproj" />
+    <ProjectReference Include="..\TheGreatestApiInTheWorldTribute.Presentation\TheGreatestApiInTheWorldTribute.Presentation.csproj" />
     <ProjectReference Include="..\TheGreatestApiInTheWorldTribute.Repository\TheGreatestApiInTheWorldTribute.Repository.csproj" />
     <ProjectReference Include="..\TheGreatestApiInTheWorldTribute.Service.Contracts\TheGreatestApiInTheWorldTribute.Service.Contracts.csproj" />
     <ProjectReference Include="..\TheGreatestApiInTheWorldTribute.Service\TheGreatestApiInTheWorldTribute.Service.csproj" />

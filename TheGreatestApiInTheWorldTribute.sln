@@ -14,13 +14,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreatestApiInTheWorldTribute.Entities", "TheGreatestApiInTheWorldTribute.Entities\TheGreatestApiInTheWorldTribute.Entities.csproj", "{E08BEC9F-3A5E-4B68-977A-27A004A4A8AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheGreatestApiInTheWorldTribute.Entities", "TheGreatestApiInTheWorldTribute.Entities\TheGreatestApiInTheWorldTribute.Entities.csproj", "{E08BEC9F-3A5E-4B68-977A-27A004A4A8AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreatestApiInTheWorldTribute.Repository", "TheGreatestApiInTheWorldTribute.Repository\TheGreatestApiInTheWorldTribute.Repository.csproj", "{9AB55B46-F8EB-42EE-89D3-4902B35B059D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheGreatestApiInTheWorldTribute.Repository", "TheGreatestApiInTheWorldTribute.Repository\TheGreatestApiInTheWorldTribute.Repository.csproj", "{9AB55B46-F8EB-42EE-89D3-4902B35B059D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreatestApiInTheWorldTribute.Service.Contracts", "TheGreatestApiInTheWorldTribute.Service.Contracts\TheGreatestApiInTheWorldTribute.Service.Contracts.csproj", "{9550C1EB-F6BB-42BA-940B-F99F7820BA0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheGreatestApiInTheWorldTribute.Service.Contracts", "TheGreatestApiInTheWorldTribute.Service.Contracts\TheGreatestApiInTheWorldTribute.Service.Contracts.csproj", "{9550C1EB-F6BB-42BA-940B-F99F7820BA0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreatestApiInTheWorldTribute.Service", "TheGreatestApiInTheWorldTribute.Service\TheGreatestApiInTheWorldTribute.Service.csproj", "{7426510E-ACA2-440B-9F0B-6C3198AC936C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheGreatestApiInTheWorldTribute.Service", "TheGreatestApiInTheWorldTribute.Service\TheGreatestApiInTheWorldTribute.Service.csproj", "{7426510E-ACA2-440B-9F0B-6C3198AC936C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreatestApiInTheWorldTribute.Presentation", "TheGreatestApiInTheWorldTribute.Presentation\TheGreatestApiInTheWorldTribute.Presentation.csproj", "{4F25A65A-3031-4705-AAB3-514F40CE7B39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{7426510E-ACA2-440B-9F0B-6C3198AC936C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7426510E-ACA2-440B-9F0B-6C3198AC936C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7426510E-ACA2-440B-9F0B-6C3198AC936C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F25A65A-3031-4705-AAB3-514F40CE7B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F25A65A-3031-4705-AAB3-514F40CE7B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F25A65A-3031-4705-AAB3-514F40CE7B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F25A65A-3031-4705-AAB3-514F40CE7B39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
