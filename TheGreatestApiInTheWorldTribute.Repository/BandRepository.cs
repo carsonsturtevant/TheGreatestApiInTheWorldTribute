@@ -1,4 +1,5 @@
-﻿using TheGreatestApiInTheWorldTribute.Contracts;
+﻿using Microsoft.EntityFrameworkCore;
+using TheGreatestApiInTheWorldTribute.Contracts;
 using TheGreatestApiInTheWorldTribute.Entities.Models;
 
 namespace TheGreatestApiInTheWorldTribute.Repository
@@ -7,6 +8,13 @@ namespace TheGreatestApiInTheWorldTribute.Repository
     {
         public BandRepository(RepositoryContext context) : base(context)
         {
+        }
+
+        public IEnumerable<Band> GetAllBands(bool trackChanges)
+        {
+            return FindAll(trackChanges)
+                .OrderBy(x => x.Name)
+                .ToList();
         }
     }
 }

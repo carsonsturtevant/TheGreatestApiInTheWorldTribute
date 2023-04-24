@@ -7,14 +7,25 @@ namespace TheGreatestApiInTheWorldTribute.Presentation.Controllers
     [ApiController]
     public class BandController : ControllerBase
     {
-        private readonly IServiceManager _services;
+        private readonly IServiceManager _serviceManager;
 
-        public BandController(IServiceManager services)
+        public BandController(IServiceManager serviceManager)
         {
-            _services = services;
+            _serviceManager = serviceManager;
         }
 
-
+        [HttpGet]
+        public IActionResult GetAllBands()
+        {
+            try
+            {
+                return Ok(_serviceManager.BandService.GetAllBands(trackChanges: false));
+            }
+            catch
+            {
+                return StatusCode(500, "Internal server error");
+            }
+        }
     }
 }
     
